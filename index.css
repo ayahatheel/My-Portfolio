@@ -151,6 +151,7 @@ nav ul li a:hover {
 
 #name p,
 #name h1 {
+    font-family: "Poppins", sans-serif;
     text-align: center;
     color: #fff;
 }
@@ -193,6 +194,7 @@ nav ul li a:hover {
 }
 
 #title {
+    
     font-size: 1.5em;
     color: red;
     font-weight: bolder;
@@ -210,6 +212,7 @@ nav ul li a:hover {
 }
 
 .skills {
+    
     background-color: greenyellow;
     color: black;
     padding: 2px 6px;
@@ -290,6 +293,94 @@ nav ul li a:hover {
         transform: rotate(360deg);
     }
 }
+
+
+/*SKLILSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+#MYSKILLS {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0; 
+}
+
+  
+  .letter-image {
+      width: auto; 
+      height: 60px;
+      display: inline-block; 
+      animation: wiggle 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes wiggle {
+    0%, 100% {
+      transform: rotate(-3deg) scale(1);
+    }
+    50% {
+      transform: rotate(3deg) scale(1.05);
+    }
+  }
+
+
+.letter {
+    font-size: 60px; 
+    margin: 0 5px; 
+}
+
+.letterY {
+    font-size: 60px; 
+    margin: 0 20PX 0 -10px; 
+}
+
+.skills-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.skills-column {
+    margin: 50px; 
+}
+
+.skills-column h2 {
+
+    padding-bottom: 5px;
+    color: greenyellow;
+}
+
+
+.skills-column ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.skills-column li {
+    list-style: disc;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .skills-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skills-column {
+        width: 100%;
+        max-width: 300px; /* Adjust the width as necessary */
+        margin-bottom: 20px;
+    }
+}
+/* trsponnnnnsivvvvvvvvvvvvvvvve */
+
 
 @media (max-width: 768px) {
     #name {
