@@ -207,23 +207,17 @@ nav ul li a:hover {
 }
 
 .highlight {
-    color: yellow;
+    color: greenyellow;
     font-weight: bold;
 }
 
-.skills {
-    
-    background-color: greenyellow;
-    color: black;
-    padding: 2px 6px;
-    border-radius: 4px;
-}
+
 
 #arrow {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10%;
+    width: 8%;
     margin: 3%;
     padding: 0;
 }
@@ -296,13 +290,21 @@ nav ul li a:hover {
 
 
 /*SKLILSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
+
+
+
 #MYSKILLS {
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    opacity: 0;
+    margin: -50px 0 0 0;
+    visibility: hidden; 
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
 }
+
 
 .title-container {
     display: flex;
@@ -310,7 +312,6 @@ nav ul li a:hover {
     align-items: center;
     font-size: 0; 
 }
-
   
   .letter-image {
       width: auto; 
@@ -339,8 +340,13 @@ nav ul li a:hover {
     margin: 0 20PX 0 -10px; 
 }
 
+.letterRE {
+    font-size: 60px; 
+    margin:0 20px 0 0;
+}
 .skills-section {
     display: flex;
+    margin: -50px 0 0 0;
     justify-content: space-around;
     padding: 20px;
 }
@@ -367,19 +373,86 @@ nav ul li a:hover {
     margin-bottom: 5px;
 }
 
-@media (max-width: 768px) {
-    .skills-section {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .skills-column {
-        width: 100%;
-        max-width: 300px; /* Adjust the width as necessary */
-        margin-bottom: 20px;
-    }
+/* soffffttweeeeareeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+
+
+
+.software {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    height: 200px;
+    width: 100%; 
+
 }
-/* trsponnnnnsivvvvvvvvvvvvvvvve */
+
+.software-icon {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 65px;
+    transition: transform 0.3s ease; 
+}
+
+.software-icon:hover {
+    transform: scale(1.3); 
+}
+
+
+.sketch { 
+    top: 20px; 
+    left: 320px; 
+    transform: rotate(-10deg); 
+}
+
+.vsc { 
+    top: 20px; 
+    left: 440px; 
+    transform: rotate(5deg); 
+}
+
+.canva { 
+    top: 10px;
+    left: 550px; 
+    transform: rotate(0deg);
+}
+
+.ps { 
+    top: -30px;
+    left: 650px; 
+    transform: rotate(5deg);
+}
+
+.git { 
+    top: -30px;
+    left: -80px; 
+    transform: rotate(10deg);
+}
+
+.vs { 
+    top: 10px;
+    right: 350px; 
+    transform: rotate(0deg);
+}
+
+.figma { 
+    top: 20px;
+    right: 450px;
+    transform: rotate(-10deg);
+}
+
+.xd {
+    top: 30px;
+    right: 560px;
+    transform: rotate(5deg);
+}
+
+
+
+/* trsponnnnnsivvvvvvvvvvvvvvvveeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
 
 
 @media (max-width: 768px) {
@@ -428,7 +501,48 @@ nav ul li a:hover {
     #arrow {
         width: 20%;
     }
+
+
+    .skills-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skills-column {
+        width: 100%;
+        max-width: 300px; 
+        margin-bottom: 20px;
+    }
 }
+
+
+/* fooooooooooooooooooooooooooooooooooooooooooooottttttttttttttttttttterrrrrrrrrrrr */
+.footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #33333329; 
+    color: white; 
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    padding-bottom: 10px; 
+}
+
+.social-media-links a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 10px; 
+    transition: color 0.3s ease-in-out;
+}
+
+.social-media-links a:hover {
+    color: greenyellow; 
+}
+
+
 
 @media (max-width: 480px) {
     #name {
@@ -476,4 +590,22 @@ nav ul li a:hover {
     #arrow {
         width: 20%;
     }
+}
+
+
+/* scrollbarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
+
+::-webkit-scrollbar {
+    width: 8px; 
+    background-color: #202020; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #404040, #606060);
+    border-radius: 4px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #505050, #707070); 
 }

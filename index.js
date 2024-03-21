@@ -20,3 +20,22 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 500);
   }, 1000);
 });
+
+//sroll
+window.addEventListener('scroll', function() {
+  var mySkillsSection = document.getElementById('MYSKILLS');
+  var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollPosition > 200) {
+      mySkillsSection.style.opacity = 1;
+      mySkillsSection.style.visibility = 'visible';
+  } else {
+      mySkillsSection.style.opacity = 0;
+      mySkillsSection.style.visibility = 'hidden';
+  }
+});
+
+
+//sroll
+
+
