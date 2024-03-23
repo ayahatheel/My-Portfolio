@@ -288,6 +288,21 @@ nav ul li a:hover {
     }
 }
 
+/* jssss anmationnnnnnnnnn adjusment */
+
+#MYSKILLS, #chat-container, .cards {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
 
 /*SKLILSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS */
 
@@ -301,8 +316,6 @@ nav ul li a:hover {
     text-align: center;
     opacity: 0;
     margin: -50px 0 0 0;
-    visibility: hidden; 
-    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
 }
 
 
@@ -415,20 +428,20 @@ nav ul li a:hover {
 }
 
 .canva { 
-    top: 10px;
+    top: -40px;
     left: 550px; 
     transform: rotate(0deg);
 }
 
 .ps { 
-    top: -30px;
-    left: 650px; 
+    top: -40px;
+    right: 530px; 
     transform: rotate(5deg);
 }
 
 .git { 
-    top: -30px;
-    left: -80px; 
+    top: 30px;
+    left: -100px; 
     transform: rotate(10deg);
 }
 
@@ -440,19 +453,133 @@ nav ul li a:hover {
 
 .figma { 
     top: 20px;
-    right: 450px;
+    right: 250px;
     transform: rotate(-10deg);
 }
 
 .xd {
     top: 30px;
-    right: 560px;
+    right: 150px;
     transform: rotate(5deg);
 }
 
+/* SPPPPPPPPPPPPPPPPPPPPPPPPP */
+
+.separator {
+    height: 1px;
+    background-color: #cccccc0c;
+    margin-left:120px;
+    margin-right:120px;
+}
 
 
-/* trsponnnnnsivvvvvvvvvvvvvvvveeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+/* instaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    grid-gap: 15px;
+    width: 100%; /* Make width flexible */
+    max-width: 750px; /* Optional: max-width to prevent the grid from getting too wide */
+    margin: auto; 
+}
+
+.card-container {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%; 
+    border: 1px solid #dbdbdb;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card-container:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 15px 25px rgba(166, 166, 166, 0.15); 
+}
+
+
+.insta-logo {
+    width: 90px;
+    height: auto;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+
+.interaction-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.first-interactions {
+    display: flex;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+#share {
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+#save {
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.text-container {
+    display: flex;
+    margin-left: 10px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #121212;
+}
+
+.caption {
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 3px;
+}
+
+.likes {
+    color: #666;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+
+/* rsponnnnnsivvvvvvvvvvvvvvvveeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
 
 
 @media (max-width: 768px) {
@@ -488,6 +615,7 @@ nav ul li a:hover {
         left: 5%;
         width: 7%;
         rotate: 23deg;
+        margin-top: 15px;
     }
 
     .hamburger {
@@ -500,49 +628,60 @@ nav ul li a:hover {
 
     #arrow {
         width: 20%;
+        margin-bottom: 30px;
     }
 
 
     .skills-section {
         flex-direction: column;
         align-items: center;
+        margin-top: 10px;
     }
     
     .skills-column {
         width: 100%;
         max-width: 300px; 
-        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .letter-image {
+        margin-top: 35px;
+    }
+
+    .letter-image, .letter, .letterY, .letterRE {
+        font-size: 12vw; 
+        height: 10vw; 
+    }
+
+    .letter, .letterRE, .letter-image {
+        font-size: 12vw; 
+        height: 10vw; 
+    }
+    
+
+    .skills-column {
+        flex-basis: 100%; 
+        margin: 10px 0; 
+    }
+
+    .software-icon {
+        width: 10vw; 
+    }
+
+    .sketch { top: 0%; left: 0%; }
+    .vsc { top: 10%; left: 13%; }
+    .canva { top: 0%; left: 28%; }
+    .ps { top: 0%; right: 0%; opacity: 0;}
+    .git { top: 0%; left: 43%; }
+    .vs { top: 0%; right:0%;}
+    .figma { top: 0%; right: 15%; }
+    .xd { top: 0%; right: 30%; }
+
+    .cards {
+        width: 90%;
+        grid-template-columns: 1fr; 
     }
 }
-
-
-/* fooooooooooooooooooooooooooooooooooooooooooooottttttttttttttttttttterrrrrrrrrrrr */
-.footer {
-    width: 100%;
-    padding: 20px;
-    background-color: #33333329; 
-    color: white; 
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-}
-
-.footer p {
-    margin: 0;
-    padding-bottom: 10px; 
-}
-
-.social-media-links a {
-    color: white; 
-    text-decoration: none;
-    margin: 0 10px; 
-    transition: color 0.3s ease-in-out;
-}
-
-.social-media-links a:hover {
-    color: greenyellow; 
-}
-
-
 
 @media (max-width: 480px) {
     #name {
@@ -591,6 +730,37 @@ nav ul li a:hover {
         width: 20%;
     }
 }
+
+
+/* fooooooooooooooooooooooooooooooooooooooooooooottttttttttttttttttttterrrrrrrrrrrr */
+.footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #33333329; 
+    color: white; 
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    padding-bottom: 10px; 
+}
+
+.social-media-links a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 10px; 
+    transition: color 0.3s ease-in-out;
+}
+
+.social-media-links a:hover {
+    color: greenyellow; 
+}
+
+
+
+
 
 
 /* scrollbarrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
