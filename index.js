@@ -59,7 +59,7 @@ window.addEventListener('scroll', function() {
 });
 
 
-// linking 
+// linking THE NAV WITH THE SETIONS
 // function smoothScroll(targetSelector, duration) {
 //   const target = document.querySelector(targetSelector);
 //   const targetPosition = target.getBoundingClientRect().top;
@@ -82,3 +82,16 @@ window.addEventListener('scroll', function() {
 
 //   requestAnimationFrame(animateScroll);
 // }
+
+
+// theme modes
+document.getElementById('toggleTheme').addEventListener('click', function() {
+  var themeStylesheet = document.getElementById('themeStylesheet');
+  var currentTheme = themeStylesheet.getAttribute('href');
+  
+  if (currentTheme.includes('dark-mode.css')) {
+      themeStylesheet.setAttribute('href', 'light-mode.css');
+  } else {
+      themeStylesheet.setAttribute('href', 'dark-mode.css');
+  }
+});

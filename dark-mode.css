@@ -288,6 +288,25 @@ nav ul li a:hover {
     }
 }
 
+/* theme butoon */
+#toggleTheme {
+    padding: 6px 12px; 
+    font-size: 14px;  
+    font-family: 'Poppins', sans-serif;
+    color: #333; 
+    background-color: #e9e9e9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#toggleTheme:hover {
+    color: #fff;
+    background-color: #4a4a4a; 
+}
+
+
 /* jssss anmationnnnnnnnnn adjusment */
 
 #MYSKILLS, #chat-container, .cards {
