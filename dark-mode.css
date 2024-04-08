@@ -55,7 +55,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: greenyellow;
+    background-color: #adff2f;
     color: #121212;
 }
 
@@ -97,7 +97,7 @@ nav ul li a:hover {
     position: absolute;
     top: 0;
     left: -60%;
-    width: 30%;
+    width: 50%;
     height: 100vh;
     padding: 20% 0;
     background: rgba(0, 0, 0, 0.9);
@@ -502,11 +502,12 @@ nav ul li a:hover {
 }
 
 .cards {
+    padding-top: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    grid-template-columns: repeat(3, 1fr); 
     grid-gap: 15px;
-    width: 100%; /* Make width flexible */
-    max-width: 750px; /* Optional: max-width to prevent the grid from getting too wide */
+    width: 100%; 
+    max-width: 750px; 
     margin: auto; 
 }
 
@@ -596,12 +597,288 @@ nav ul li a:hover {
     margin-left: 10px;
     font-size: 0.9em;
 }
+/* ! mockuppppppppps*/
+
+.work {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%; 
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+}
+
+.each_work {
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px; 
+    margin: auto;
+    height: auto; 
+}
+
+
+.nuqtaimg {
+    width: 60%;
+    position: relative;
+    right: 100px;
+    z-index: 2;
+}
+
+.work_det {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.178);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 1400px;
+    height: 400px;
+    bottom: 50px;
+    left: 200px;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.nuqtalogo{
+    width: 220px;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.nuqta-p {
+    text-align: left;
+    font-size: 0.9em;
+    padding-right: 170px;
+    padding-left: 30px;
+}
+
+.wadeni-p {
+    text-align: left;
+    font-size: 0.9em;
+    padding-right: 170px;
+    padding-top: 70px;
+    padding-left: 30px;
+}
+
+
+.each_work1 {
+    direction: ltr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px; 
+    margin: auto;
+    height: auto; 
+}
+
+.work_det1 {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.178);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 1400px;
+    height: 400px;
+    bottom: 50px;
+    right: 100px;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.nuqtalogo{
+    width: 220px;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.wadeni-p {
+    text-align: left;
+    font-size: 0.9em;
+    margin-left: 210px;
+    margin-right:60px;
+}
+
+
+.wedeniimg {
+    width: 40%;
+    position: relative;
+    left: 130px;
+    bottom: 40px;
+    z-index: 2;
+}
+
+
+.each_work2 {
+    direction: ltr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px; 
+    margin: auto;
+    height: auto; 
+}
+
+.work_det2 {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.178);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 1400px;
+    margin-top: 30px;
+    height: 400px;
+    bottom: 50px;
+    right: 100px;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.jawharalaptop {
+    width: 40%;
+    rotate: -5deg;
+    position: relative;
+    left: 110px;
+    bottom: 40px;
+    z-index: 2;
+}
+
+.jawahraimg {
+    width: 45%;
+    position: relative;
+    left: 310px;
+    bottom: 230px;
+    z-index: 2;
+}
+
+.jawahra-p {
+    text-align: left;
+    font-size: 0.9em;
+    margin-left: 210px;
+    margin-right:60px;
+    margin-top: 60px;
+}
+
+.jawahra-p1 {
+    text-align: left;
+    font-size: 0.9em;
+    margin-left: 210px;
+    margin-right:260px;
+}
+
+
+/* !contact me */
+.contactme {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #e2e2e2;
+    margin-bottom: -1px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #555;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background-color: #222;
+    padding: 0 5px;
+    margin: 10px 0 0;
+    transition: all 0.3s;
+    opacity: 0.7;
+}
+
+input:focus + label, textarea:focus + label {
+    top: -18px;
+    font-size: 12px;
+    opacity: 1;
+}
+
+button {
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+   
+    .contactme {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em; 
+    }
+
+    input, textarea {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px;
+    }
+}
 
 
 /* rsponnnnnsivvvvvvvvvvvvvvvveeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
 
 
 @media (max-width: 768px) {
+
+    
+  
+    #toggleThemeNav {
+        display: none;
+    }
+    
     #name {
         margin-top: 50px;
     }
@@ -700,6 +977,89 @@ nav ul li a:hover {
         width: 90%;
         grid-template-columns: 1fr; 
     }
+
+    /* !! */
+  
+    .work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.each_work, .each_work1, .each_work2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+.nuqtaimg, .wedeniimg, .jawharalaptop, .jawahraimg {
+    width: 100%; 
+    position: relative;
+}
+
+.nuqtaimg{
+    top: 50px;
+    right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wedeniimg{
+    width: 80%; 
+    top: 10px;
+    left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.jawharalaptop{
+    width: 80%; 
+    top: 10px;
+    left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.jawahraimg{
+    display: none;
+}
+
+.work_det, .work_det1, .work_det2 {
+    right: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.178);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%; 
+    height: auto;
+    margin: 20px 0; 
+    text-align: center;
+    padding: 20px;
+}
+
+.nuqtalogo {
+    width: 45%; 
+    margin: 0px 0px 0px;
+}
+
+.nuqta-p, .wadeni-p, .jawahra-p, .jawahra-p1 {
+    font-size: 1em; 
+    padding: 10px; 
+    margin: 0;
+}
+
 }
 
 @media (max-width: 480px) {
@@ -748,9 +1108,171 @@ nav ul li a:hover {
     #arrow {
         width: 20%;
     }
+
+     /* !! */
+  
+     .work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        width: 100%;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+    
+    .each_work, .each_work1, .each_work2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .nuqtaimg, .wedeniimg, .jawharalaptop, .jawahraimg {
+        width: 100%; 
+        position: relative;
+    }
+    
+    .nuqtaimg{
+        top: 50px;
+        right: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .wedeniimg{
+        width: 80%; 
+        top: 10px;
+        left: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .jawharalaptop{
+        width: 80%; 
+        top: 10px;
+        left: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .jawahraimg{
+        display: none;
+    }
+    
+    .work_det, .work_det1, .work_det2 {
+        right: 0;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.178);
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 90%; 
+        height: auto;
+        margin: 20px 0; 
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .nuqtalogo {
+        width: 45%; 
+        margin: 0px 0px 0px;
+    }
+    
+    .nuqta-p, .wadeni-p, .jawahra-p, .jawahra-p1 {
+        font-size: 1em; 
+        padding: 10px; 
+        margin: 0;
+    }
+    
 }
 
-
+@media (min-width: 768px) and (max-width: 1024px) {
+    .work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        width: 100%;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+    
+    .each_work, .each_work1, .each_work2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .nuqtaimg, .wedeniimg, .jawharalaptop, .jawahraimg {
+        width: 100%; 
+        position: relative;
+    }
+    
+    .nuqtaimg{
+        top: 50px;
+        right: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .wedeniimg{
+        width: 80%; 
+        top: 10px;
+        left: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .jawharalaptop{
+        width: 80%; 
+        top: 10px;
+        left: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .jawahraimg{
+        display: none;
+    }
+    
+    .work_det, .work_det1, .work_det2 {
+        right: 0;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.178);
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 90%; 
+        height: auto;
+        margin: 20px 0; 
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .nuqtalogo {
+        width: 45%; 
+        margin: 0px 0px 0px;
+    }
+    
+    .nuqta-p, .wadeni-p, .jawahra-p, .jawahra-p1 {
+        font-size: 1em; 
+        padding: 10px; 
+        margin: 0;
+    }}
 /* fooooooooooooooooooooooooooooooooooooooooooooottttttttttttttttttttterrrrrrrrrrrr */
 .footer {
     width: 100%;
@@ -798,3 +1320,5 @@ nav ul li a:hover {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(180deg, #505050, #707070); 
 }
+
+

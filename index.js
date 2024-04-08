@@ -26,11 +26,13 @@ document.addEventListener('DOMContentLoaded', function () {
 window.addEventListener('scroll', function() {
   var mySkillsSection = document.getElementById('MYSKILLS');
   var cardsContainer = document.querySelector('.cards');
+  var workSection = document.querySelector('.work'); // Get the work section
 
   var scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
   var mySkillsPosition = mySkillsSection.offsetTop;
   var cardsPosition = cardsContainer.offsetTop;
+  var workPosition = workSection.offsetTop; // Get the offset top of the work section
 
   var buffer = 200; 
 
@@ -45,7 +47,6 @@ window.addEventListener('scroll', function() {
       mySkillsSection.style.visibility = 'hidden';
   }
 
-
   // Cards Section
   if (scrollPosition + buffer > cardsPosition) {
       cardsContainer.style.opacity = 1;
@@ -56,7 +57,20 @@ window.addEventListener('scroll', function() {
       cardsContainer.style.transform = 'translateY(20px)';
       cardsContainer.style.visibility = 'hidden';
   }
+
+  // Work Section
+  if (scrollPosition + buffer > workPosition) {
+      workSection.style.opacity = 1;
+      workSection.style.transform = 'translateY(0)';
+      workSection.style.visibility = 'visible';
+  } else {
+      workSection.style.opacity = 0;
+      workSection.style.transform = 'translateY(20px)';
+      workSection.style.visibility = 'hidden';
+  }
+
 });
+
 
 
 // linking THE NAV WITH THE SETIONS
@@ -85,13 +99,48 @@ window.addEventListener('scroll', function() {
 
 
 // theme modes
-document.getElementById('toggleTheme').addEventListener('click', function() {
-  var themeStylesheet = document.getElementById('themeStylesheet');
-  var currentTheme = themeStylesheet.getAttribute('href');
-  
-  if (currentTheme.includes('dark-mode.css')) {
-      themeStylesheet.setAttribute('href', 'light-mode.css');
-  } else {
-      themeStylesheet.setAttribute('href', 'dark-mode.css');
+document.addEventListener('DOMContentLoaded', () => {
+  const themeStylesheet = document.getElementById('themeStylesheet');
+  const toggleThemeNav = document.getElementById('toggleThemeNav');
+  const toggleThemeMenuBar = document.getElementById('toggleThemeMenuBar');
+
+  function toggleTheme() {
+      if (themeStylesheet.href.includes('dark-mode.css')) {
+          themeStylesheet.href = 'light-mode.css';
+          toggleThemeNav.textContent = 'Dark Mode';
+          toggleThemeMenuBar.textContent = 'Dark Mode';
+      } else {
+          themeStylesheet.href = 'dark-mode.css';
+          toggleThemeNav.textContent = 'Light Mode';
+          toggleThemeMenuBar.textContent = 'Light Mode';
+      }
   }
+
+  toggleThemeNav.addEventListener('click', toggleTheme);
+  toggleThemeMenuBar.addEventListener('click', toggleTheme);
 });
+
+// ! slider
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.slide');
+  let index = 0;
+
+  function showSlide(i) {
+    index = i;
+    if (index >= slides.length) index = 0;
+    if (index < 0) index = slides.length - 1;
+    document.getElementById('slider').style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  document.getElementById('prev').addEventListener('click', () => showSlide(index - 1));
+  document.getElementById('next').addEventListener('click', () => showSlide(index + 1));
+
+  // Optional: Auto-slide
+  setInterval(() => showSlide(index + 1), 3000); // Change slides every 3 seconds
+});
+
+
+// ! contact me
+

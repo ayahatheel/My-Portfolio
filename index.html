@@ -11,6 +11,8 @@
     <meta name="author" content="Ayah Atheel">
     <link rel="icon" type="image/png" href="assets/star.png">
     <link rel="stylesheet" type="text/css" href="dark-mode.css" />
+    <link rel="stylesheet" id="themeStylesheet" href="dark-mode.css">
+
 </head>
 
 <body>
@@ -20,46 +22,29 @@
             <img src="assets/star.png" alt="logo" />
         </div>
         <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-            <li><a href="#" onclick="smoothScroll('.cards', 2000)">My Work</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul> 
+        <button id="toggleThemeNav">Toggle Theme</button>
 
-            
-            <li>
-                <a href="#">Contact Me</a>
-            </li>
-        </ul>
         <div class="hamburger">
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
         </div>
-
-        <link rel="stylesheet" id="themeStylesheet" href="dark-mode.css">
-        <button id="toggleTheme">Theme Mode</button>
-
-
+       
     </nav>
     <div class="menubar">
         <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-            <li>
-                <a href="#">My Work</a>
-            </li>
-            <li>
-                <a href="#">Contact Me</a>
-            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Work</a></li>
+            <li><a href="#">Contact Me</a></li>
+            <button id="toggleThemeMenuBar">Toggle Theme</button>
         </ul>
+        
     </div>
+    
 
     <!-- ----------------       header          ---------------- -->
     <header>
@@ -167,6 +152,62 @@
         </section>
 
         <div class="separator"></div>
+
+      <!-- !mockups -->
+
+<div class="work">
+    <div class="each_work" >
+        <img class="nuqtaimg" src="assets/nuqta.png">
+        <div class="work_det">
+            <img class="nuqtalogo" src="assets/nuqtalogo.png">
+            <p class="nuqta-p"> Nuqta is an innovative and dynamic educational application designed to empower the youth by offering a  comprehensive range of courses and lessons in various fields. <br>  Whether you're a budding creative, a tech enthusiast, or a student striving to excel in academics,Nuqta has something to offer for learners of all ages and backgrounds.</p>
+        </div>
+    </div>
+
+
+    <div class="each_work1">
+        <img class="wedeniimg" src="assets/weddeni.png">
+        <div class="work_det1">
+            <!-- <img class="nuqtalogo" src="assets/nuqtalogo.png"> -->
+            <p class="wadeni-p"> Nuqta is an innovative and dynamic educational application designed to empower the youth by offering a  comprehensive range of courses and lessons in various fields. <br>  Whether you're a budding creative, a tech enthusiast, or a student striving to excel in academics,Nuqta has something to offer for learners of all ages and backgrounds.</p>
+        </div>
+    </div>
+
+
+    <div class="each_work2">
+        <img class="jawharalaptop" src="assets/jawharalaptop.png">
+        <div class="work_det2">
+            <!-- <img class="jawahra" src="assets/nuqtalogo.png"> -->
+            <p class="jawahra-p"> Nuqta is an innovative and dynamic educational application designed to empower the youth by offering a  comprehensive range of courses and lessons in various fields. <br>  Whether you're a budding creative,  backgrounds.</p>
+           
+            <p class="jawahra-p1"> Nuqta is an innovative and dynamic educational application designed to empower the youth by offering a  comprehensive range of courses and lessons in various fields. <br>  Whether you're a budding creative, a tech enthusiast, or a student striving to excel in academics,Nuqta has something to offer for learners of all ages and backgrounds.</p>
+
+            <img class="jawahraimg" src="assets/jharaphones.png">
+        </div>
+    </div>
+</div>
+
+
+      <!-- <div id="phone-gallery">
+        <div class="phone" onclick="gotoPage('page1.html')">
+          <img src="assets/mockups.png"  id="phone1" alt="Phone 1" />
+        </div>
+        <div class="phone" onclick="gotoPage('page2.html')">
+          <img src="assets/mockups.png" id="phone2" alt="Phone 2" />
+        </div>
+        <div class="phone" onclick="gotoPage('page3.html')">
+          <img src="assets/mockups.png" id="phone3" alt="Phone 3" />
+        </div>
+        <div class="phone" onclick="gotoPage('pag4.html')">
+            <img src="assets/mockups.png" id="phone4" alt="Phone 4" />
+          </div>
+          <div class="phone" onclick="gotoPage('page5.html')">
+            <img src="assets/mockups.png" id="phone5" alt="Phone 5" />
+          </div>
+      </div> -->
+
+
+   
 
         <div class="cards">
 
@@ -291,10 +332,33 @@
 
         </div>
 
+       
 
 
 
+        <div class="contactme">
+            <h1>Contact Me</h1>
+            <p class="intro">Have a question or want to work together? Drop me a message!</p>
+            
+            <form id="contact-form" 
+  action=" https://formspree.io/f/xpzvyovk"
+  method="POST">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit"> >Send Message</button>
+            </form>
+        </div>
+          
+
+
+  
+
+          
     </main>
+
+
+    
 
 
     <footer class="footer">
