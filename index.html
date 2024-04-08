@@ -12,6 +12,8 @@
     <link rel="icon" type="image/png" href="assets/star.png">
     <link rel="stylesheet" type="text/css" href="dark-mode.css" />
     <link rel="stylesheet" id="themeStylesheet" href="dark-mode.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 </head>
 
@@ -22,9 +24,9 @@
             <img src="assets/star.png" alt="logo" />
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#container">Home</a></li>
+            <li><a href="#work">Services</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
         </ul> 
         <button id="toggleThemeNav">Toggle Theme</button>
 
@@ -37,9 +39,9 @@
     </nav>
     <div class="menubar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">My Work</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#container">Home</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
             <button id="toggleThemeMenuBar">Toggle Theme</button>
         </ul>
         
@@ -151,21 +153,24 @@
             </section>
         </section>
 
-        <div class="separator"></div>
+        <!-- <div class="separator"></div> -->
 
       <!-- !mockups -->
 
-<div class="work">
-    <div class="each_work" >
+<div class="work" id="work">
+    <div class="each_work" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
         <img class="nuqtaimg" src="assets/nuqta.png">
         <div class="work_det">
             <img class="nuqtalogo" src="assets/nuqtalogo.png">
-            <p class="nuqta-p"> Nuqta is an innovative and dynamic educational application designed to empower the youth by offering a  comprehensive range of courses and lessons in various fields. <br>  Whether you're a budding creative, a tech enthusiast, or a student striving to excel in academics,Nuqta has something to offer for learners of all ages and backgrounds.</p>
+            <p class="nuqta-p">
+                <strong>Nuqta:</strong> Unleash your potential with our cutting-edge educational platform! Tailored for the aspirational minds of all ages, Nuqta offers an extensive range of courses spanning various domains. Whether you’re igniting your creative spark, diving into the tech world, or advancing your academic journey, Nuqta empowers you to excel. Embark on your learning adventure with us and transform your aspirations into reality!
+            </p>
+            
         </div>
     </div>
 
 
-    <div class="each_work1">
+    <div class="each_work1" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
         <img class="wedeniimg" src="assets/weddeni.png">
         <div class="work_det1">
             <!-- <img class="nuqtalogo" src="assets/nuqtalogo.png"> -->
@@ -174,7 +179,7 @@
     </div>
 
 
-    <div class="each_work2">
+    <div class="each_work2" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
         <img class="jawharalaptop" src="assets/jawharalaptop.png">
         <div class="work_det2">
             <!-- <img class="jawahra" src="assets/nuqtalogo.png"> -->
@@ -186,6 +191,11 @@
         </div>
     </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 
       <!-- <div id="phone-gallery">
@@ -333,24 +343,17 @@
         </div>
 
        
-
-
-
-        <div class="contactme">
+        <div class="contactme" id="contactme">
             <h1>Contact Me</h1>
-            <p class="intro">Have a question or want to work together? Drop me a message!</p>
-            
-            <form id="contact-form" 
-  action=" https://formspree.io/f/xpzvyovk"
-  method="POST">
+            <p class="intro">Have a question or want to work together? <br> Drop me a message!</p>
+            <form id="contact-form" action="https://formspree.io/f/xpzvyovk" method="POST">
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
                 <input type="email" id="email" name="email" placeholder="Your Email" required>
                 <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <button type="submit"> >Send Message</button>
+                <button type="submit">Send Message</button>
             </form>
+            <div id="submit-message"></div>
         </div>
-          
-
 
   
 
@@ -361,7 +364,7 @@
     
 
 
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
         <p>&copy; 2024 Ayah Atheel. All rights reserved.</p>
         <div class="social-media-links">
             <a href="https://www.linkedin.com/in/ayah-atheel-4205041a9/">LinkedIn</a>

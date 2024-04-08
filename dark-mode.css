@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 * {
@@ -135,6 +138,29 @@ nav ul li a:hover {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
 }
 
+#toggleThemeNav,
+#toggleThemeMenuBar {
+    background-color: transparent; 
+    color: #fff; 
+    border: 1px solid #fff; 
+    padding: 5px 10px; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 14px; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+#toggleThemeNav:hover,
+#toggleThemeMenuBar:hover {
+    background-color: #fff; 
+    color: #222; 
+}
+
+
+/* !!!!!!!!!!!!!! */
 #container {
     position: relative;
     width: 100%;
@@ -621,7 +647,7 @@ nav ul li a:hover {
 
 
 .nuqtaimg {
-    width: 60%;
+    width: 55%;
     position: relative;
     right: 100px;
     z-index: 2;
@@ -706,7 +732,7 @@ nav ul li a:hover {
 
 
 .wedeniimg {
-    width: 40%;
+    width: 35%;
     position: relative;
     left: 130px;
     bottom: 40px;
@@ -776,96 +802,107 @@ nav ul li a:hover {
 
 /* !contact me */
 .contactme {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.178);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #eee;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    margin: 40px auto;
     max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #222;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-h1 {
-    text-align: center;
-    color: #e2e2e2;
-    margin-bottom: -1px;
+.contactme h1 {
+    color: #fff;
+    margin-bottom: 20px;
 }
 
-.intro {
-    text-align: center;
-    margin-bottom: 0px;
+.contactme p.intro {
+    margin-bottom: -15px;
+    font-size: 18px;
+    opacity: 0.9;
 }
 
-form {
+#contact-form {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #333;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    color: #fff;
-    transition: border-color 0.3s;
+#contact-form input,
+#contact-form textarea {
+    background-color: black;
+    border: 1px solid #444;
+    color: #ddd;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 6px;
 }
 
-input:focus, textarea:focus {
-    outline: none;
-    border-color: #555;
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color: #bbb;
 }
 
-label {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    background-color: #222;
-    padding: 0 5px;
-    margin: 10px 0 0;
-    transition: all 0.3s;
-    opacity: 0.7;
-}
-
-input:focus + label, textarea:focus + label {
-    top: -18px;
-    font-size: 12px;
-    opacity: 1;
-}
-
-button {
-    padding: 10px;
-    background-color: #444;
-    color: #fff;
+#contact-form button {
+    background-color: greenyellow;
+    color: black;
     border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s, transform 0.2s;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #555;
-    transform: translateY(-2px);
+#contact-form button:hover {
+    background-color: white;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
-   
     .contactme {
-        margin: 20px;
-        padding: 15px;
+        padding: 40px;
+        margin: 20px auto;
     }
 
-    h1 {
-        font-size: 1.5em; 
+    .contactme h1 {
+        font-size: 24px;
     }
 
-    input, textarea {
-        padding: 8px;
+    .contactme p.intro {
+        font-size: 16px;
     }
 
-    button {
-        padding: 8px;
+    #contact-form input,
+    #contact-form textarea,
+    #contact-form button {
+        padding: 10px;
     }
 }
+
+@media (max-width: 480px) {
+    .contactme {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .contactme h1 {
+        font-size: 20px;
+    }
+
+    .contactme p.intro {
+        font-size: 14px;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        font-size: 14px;
+    }
+}
+
 
 
 /* rsponnnnnsivvvvvvvvvvvvvvvveeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
@@ -1194,6 +1231,8 @@ button:hover {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
+
     .work {
         display: flex;
         flex-direction: column;
@@ -1272,32 +1311,65 @@ button:hover {
         font-size: 1em; 
         padding: 10px; 
         margin: 0;
-    }}
+    }
+
+
+}
 /* fooooooooooooooooooooooooooooooooooooooooooooottttttttttttttttttttterrrrrrrrrrrr */
 .footer {
     width: 100%;
     padding: 20px;
-    background-color: #33333329; 
-    color: white; 
+    background-color: #33333329;
+    color: white;
     font-family: "Poppins", sans-serif;
     text-align: center;
 }
 
 .footer p {
     margin: 0;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
 
 .social-media-links a {
-    color: white; 
+    color: white;
     text-decoration: none;
-    margin: 0 10px; 
+    margin: 0 10px;
     transition: color 0.3s ease-in-out;
 }
 
 .social-media-links a:hover {
-    color: greenyellow; 
+    color: greenyellow;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
+    .social-media-links a {
+        margin: 0 5px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 15px 5px;
+    }
+
+    .footer p {
+        font-size: 12px; 
+    }
+
+    .social-media-links a {
+        font-size: 12px; 
+    }
+}
+
 
 
 

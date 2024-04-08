@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded', function () {
 window.addEventListener('scroll', function() {
   var mySkillsSection = document.getElementById('MYSKILLS');
   var cardsContainer = document.querySelector('.cards');
-  var workSection = document.querySelector('.work'); // Get the work section
+  // var workSection = document.querySelector('.work'); // Get the work section
 
   var scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
   var mySkillsPosition = mySkillsSection.offsetTop;
   var cardsPosition = cardsContainer.offsetTop;
-  var workPosition = workSection.offsetTop; // Get the offset top of the work section
+  // var workPosition = workSection.offsetTop; // Get the offset top of the work section
 
   var buffer = 200; 
 
@@ -59,15 +59,15 @@ window.addEventListener('scroll', function() {
   }
 
   // Work Section
-  if (scrollPosition + buffer > workPosition) {
-      workSection.style.opacity = 1;
-      workSection.style.transform = 'translateY(0)';
-      workSection.style.visibility = 'visible';
-  } else {
-      workSection.style.opacity = 0;
-      workSection.style.transform = 'translateY(20px)';
-      workSection.style.visibility = 'hidden';
-  }
+  // if (scrollPosition + buffer > workPosition) {
+  //     workSection.style.opacity = 1;
+  //     workSection.style.transform = 'translateY(0)';
+  //     workSection.style.visibility = 'visible';
+  // } else {
+  //     workSection.style.opacity = 0;
+  //     workSection.style.transform = 'translateY(20px)';
+  //     workSection.style.visibility = 'hidden';
+  // }
 
 });
 
@@ -144,3 +144,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ! contact me
 
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const form = this;
+  const data = new FormData(form);
+  const action = form.action;
+
+  fetch(action, {
+      method: 'POST',
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+  })
+  .then(response => {
+      if (response.ok) {
+          document.getElementById('submit-message').textContent = 'Your message has been submitted. Thank you!';
+          form.reset(); // Reset the form fields
+      } else {
+          document.getElementById('submit-message').textContent = 'There was an error submitting your message. Please try again.';
+      }
+  })
+  .catch(error => {
+      document.getElementById('submit-message').textContent = 'An error occurred. Please try again.';
+  });
+});
+
+
+// sommth html
