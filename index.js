@@ -1,4 +1,4 @@
-// nav
+// !!!!!!!!!!! nav
 
 const mobileNav = document.querySelector(".hamburger");
 const navbar = document.querySelector(".menubar");
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }, 1000);
 });
 
-//sroll
+//!!!!!! sroll
 
 window.addEventListener('scroll', function() {
   var mySkillsSection = document.getElementById('MYSKILLS');
@@ -98,7 +98,7 @@ window.addEventListener('scroll', function() {
 // }
 
 
-// theme modes
+//!!!!! theme modes
 document.addEventListener('DOMContentLoaded', () => {
   const themeStylesheet = document.getElementById('themeStylesheet');
   const toggleThemeNav = document.getElementById('toggleThemeNav');
@@ -123,26 +123,26 @@ document.addEventListener('DOMContentLoaded', () => {
 // ! slider
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  const slides = document.querySelectorAll('.slide');
-  let index = 0;
+// document.addEventListener('DOMContentLoaded', () => {
+//   const slides = document.querySelectorAll('.slide');
+//   let index = 0;
 
-  function showSlide(i) {
-    index = i;
-    if (index >= slides.length) index = 0;
-    if (index < 0) index = slides.length - 1;
-    document.getElementById('slider').style.transform = `translateX(-${index * 100}%)`;
-  }
+//   function showSlide(i) {
+//     index = i;
+//     if (index >= slides.length) index = 0;
+//     if (index < 0) index = slides.length - 1;
+//     document.getElementById('slider').style.transform = `translateX(-${index * 100}%)`;
+//   }
 
-  document.getElementById('prev').addEventListener('click', () => showSlide(index - 1));
-  document.getElementById('next').addEventListener('click', () => showSlide(index + 1));
+//   document.getElementById('prev').addEventListener('click', () => showSlide(index - 1));
+//   document.getElementById('next').addEventListener('click', () => showSlide(index + 1));
 
-  // Optional: Auto-slide
-  setInterval(() => showSlide(index + 1), 3000); // Change slides every 3 seconds
-});
+//   // Optional: Auto-slide
+//   setInterval(() => showSlide(index + 1), 3000); // Change slides every 3 seconds
+// });
 
 
-// ! contact me
+// !!!!! contact me
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
   event.preventDefault();

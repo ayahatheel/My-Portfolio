@@ -682,6 +682,7 @@ nav ul li a:hover {
 .nuqta-p {
     text-align: left;
     font-size: 0.9em;
+    padding-top: 50px;
     padding-right: 170px;
     padding-left: 30px;
 }
@@ -728,10 +729,11 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 .wadeni-p {
+    
     text-align: left;
     font-size: 0.9em;
     margin-left: 210px;
-    margin-right:60px;
+    margin-right:-90px;
 }
 
 
@@ -789,6 +791,8 @@ nav ul li a:hover {
 }
 
 .jawahra-p {
+    overflow: hidden;   
+    text-overflow: ellipsis; 
     text-align: left;
     font-size: 0.9em;
     margin-left: 210px;
@@ -797,6 +801,8 @@ nav ul li a:hover {
 }
 
 .jawahra-p1 {
+    overflow: hidden;    
+    text-overflow: ellipsis; 
     text-align: left;
     font-size: 0.9em;
     margin-left: 210px;

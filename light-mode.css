@@ -167,3 +167,8 @@ nav ul li a:hover {
     background-color: white;
     color: black;
 }
+
+
+#submit-message {
+    color: #333;
+}
