@@ -21,14 +21,14 @@
     <!-- ----------------       Nav          ---------------- -->
     <nav>
         <div class="logo">
-            <img src="assets/star.png" alt="logo" />
+            <img src="assets/star.png"  alt="logo" />
         </div>
         <ul>
             <li><a href="#container">Home</a></li>
             <li><a href="#work">Services</a></li>
             <li><a href="#contactme">Contact Me</a></li>
         </ul> 
-        <button id="toggleThemeNav">Toggle Theme</button>
+        <button id="toggleThemeNav">Light Mode</button>
 
         <div class="hamburger">
             <span class="line"></span>
@@ -42,7 +42,7 @@
             <li><a href="#container">Home</a></li>
             <li><a href="#work">My Work</a></li>
             <li><a href="#contactme">Contact Me</a></li>
-            <button id="toggleThemeMenuBar">Toggle Theme</button>
+            <button id="toggleThemeMenuBar">Light Mode</button>
         </ul>
         
     </div>
@@ -57,9 +57,9 @@
                 <img src="/assets/portfolio_text.png" alt="Portfolio" id="portfolioText">
                 <div class="bio">
                     <p id="title">UX/UI Designer &amp; Front-End Developer</p>
-                    <p>With over <span class="highlight">3 years of experience</span> in the industry, I combine
-                        creativity with technology to craft user-centric designs and front-end solutions.</p>
-                    <p>Let's create <span class="highlight">innovative</span> digital experiences together!</p>
+                    <p> Blending creativity with technology <br> for innovative user-centric designs and front-end solutions. <BR> With over <span class="highlight">3 years of experience</span> in the industry</p>
+              
+                  <p>Let's craft cutting-edge digital experiences!</p>
                 </div>
                 <img src="/assets/arrow.png" alt="Arrow" id="arrow">
 
@@ -76,7 +76,7 @@
 
 
     <main>
-        <section id="MYSKILLS">
+        <section id="MYSKILLS" data-aos="zoom-out-up" data-aos-delay="100" data-aos-duration="1000" >
             <section>
                 <div class="title-container">
                     <img src="assets/M.png" alt="M" class="letter-image">
@@ -158,6 +158,17 @@
       <!-- !mockups -->
 
 <div class="work" id="work">
+    <div class="title-container" data-aos="zoom-out-up" data-aos-delay="100" data-aos-duration="1000" > 
+        <img src="assets/M.png" alt="M" class="letter-image">
+        <span class="letterY">Y</span>
+
+        <span class="letter">W</span>
+        <img src="assets/O.png" alt="I" class="letter-image">
+        <span class="letter">R</span>
+        <img src="assets/K.png" alt="L" class="letter-image">
+    </div>
+
+
     <div class="each_work" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
         <img class="nuqtaimg" src="assets/nuqta.png">
         <div class="work_det">
@@ -197,10 +208,7 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
 
 
       <!-- <div id="phone-gallery">
@@ -224,7 +232,7 @@
 
    
 
-        <div class="cards">
+        <div class="cards" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
 
             <div class="card-container">
                 <img src="/assets/insta.png" alt="insta" class="insta-logo">
@@ -346,9 +354,9 @@
 
 
         </div>
-
+        
        
-        <div class="contactme" id="contactme">
+        <div class="contactme" id="contactme" data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="1000">
             <h1>Contact Me</h1>
             <p class="intro">Have a question or want to work together? <br> Drop me a message!</p>
             <form id="contact-form" action="https://formspree.io/f/xpzvyovk" method="POST">
@@ -361,8 +369,18 @@
             <div id="submit-message"></div>
         </div>
 
-  
+        <!-- <img src="/assets/mouse.png" alt="Mouse" id="mouseIcon2" class="mouseIcon2">
+                <img src="/assets/circle.png" alt="Circle" class="circle" id="circle3">
+                <img src="/assets/circle.png" alt="Circle" class="circle" id="circle4">
+                <img src="/assets/star.png" alt="Star" class="star" id="star3">
+                <img src="/assets/star.png" alt="Star" class="star" id="star4"> -->
 
+
+  
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
           
     </main>
 

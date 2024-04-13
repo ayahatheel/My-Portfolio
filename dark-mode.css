@@ -18,6 +18,9 @@ body {
     padding: 0;
     font-family: "Poppins", sans-serif;
     background-color: #121212;
+    background-image: url(assets/bgg.png);
+    background-repeat: repeat; 
+    background-size:100%;
     color: #ffffff;
 }
 
@@ -246,8 +249,9 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     width: 8%;
-    margin: 3%;
+    margin: 2%;
     padding: 0;
+    margin-bottom: 5%;
 }
 
 #portfolio {
@@ -276,9 +280,37 @@ nav ul li a:hover {
     animation: scaleUp 1s linear infinite;
 }
 
+
+#star3 {
+    top: 435%;
+    left: 5%;
+    width: 7%;
+    rotate: 23deg;
+    animation: scaleUp 1s linear infinite;
+}
+
+#star4 {
+    top: 465%;
+    right: 8%;
+    width: 4%;
+    rotate: 53deg;
+    animation: scaleUp 1s linear infinite;
+}
+
 #mouseIcon {
     top: 25%;
     left: 75%;
+    width: 8%;
+}
+
+#mouseIcon2 {
+    position: absolute;
+}
+
+#mouseIcon2 {
+    top: 485%;
+    left: 15%;
+    rotate: 80deg;
     width: 8%;
 }
 
@@ -286,7 +318,7 @@ nav ul li a:hover {
     top: -10%;
     left: 5%;
     width: 18%;
-    opacity: 0.2;
+    opacity: 0.4;
     animation: spin 20s linear infinite;
 }
 
@@ -294,7 +326,23 @@ nav ul li a:hover {
     top: 65%;
     left: 75%;
     width: 18%;
-    opacity: 0.2;
+    opacity: 0.4;
+    animation: spin 20s linear infinite;
+}
+
+#circle3 {
+    top: 370%;
+    left: 5%;
+    width: 18%;
+    opacity: 0.4;
+    animation: spin 20s linear infinite;
+}
+
+#circle4 {
+    top: 420%;
+    right: 6%;
+    width: 15%;
+    opacity: 0.4;
     animation: spin 20s linear infinite;
 }
 
@@ -337,12 +385,12 @@ nav ul li a:hover {
 
 /* jssss anmationnnnnnnnnn adjusment */
 
-#MYSKILLS, #chat-container, .cards {
+/* #MYSKILLS{
     opacity: 0;
     transform: translateY(20px);
     visibility: hidden;
     transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
-}
+} */
 
 .visible {
     opacity: 1;
@@ -361,7 +409,6 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    opacity: 0;
     margin: -50px 0 0 0;
 }
 
@@ -549,7 +596,8 @@ nav ul li a:hover {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease,
+     box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .card-container:hover {
@@ -634,7 +682,8 @@ nav ul li a:hover {
     min-height: 100vh;
     margin: 0;
     width: 100%; 
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, 
+    opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 
 }
 
@@ -797,7 +846,7 @@ nav ul li a:hover {
     font-size: 0.9em;
     margin-left: 210px;
     margin-right:60px;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .jawahra-p1 {
@@ -878,6 +927,10 @@ nav ul li a:hover {
         margin: 20px auto;
     }
 
+    #mouseIcon2 {
+       display: none;
+    }
+
     .contactme h1 {
         font-size: 24px;
     }
@@ -898,6 +951,8 @@ nav ul li a:hover {
         padding: 15px;
         margin: 20px;
     }
+
+
 
     .contactme h1 {
         font-size: 20px;
@@ -920,8 +975,18 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
 
-    
+    #star4 {
+        display: none;
+    }
+
+    #star3 {
+        display: none;
+    }
   
+    #mouseIcon2 {
+      display: none;
+    }
+
     #toggleThemeNav {
         display: none;
     }
@@ -930,6 +995,7 @@ nav ul li a:hover {
         margin-top: 50px;
     }
 
+    
     #name p {
         font-size: 18px;
     }
@@ -1110,9 +1176,28 @@ nav ul li a:hover {
 }
 
 @media (max-width: 480px) {
+
+    
+    #star4 {
+        display: none;
+    }
+
+    #star3 {
+        display: none;
+    }
+  
+    #mouseIcon2 {
+      display: none;
+    }
+
+
     #name {
         margin-top: 30px;
     }
+
+    #mouseIcon2{
+        display: none;
+     }
 
     #name p {
         font-size: 16px;
@@ -1242,6 +1327,17 @@ nav ul li a:hover {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
+  #star4 {
+        display: none;
+    }
+
+    #star3 {
+        display: none;
+    }
+  
+    #mouseIcon2 {
+      display: none;
+    }
 
     .work {
         display: flex;
@@ -1353,6 +1449,18 @@ nav ul li a:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    #star4 {
+        display: none;
+    }
+
+    #star3 {
+        display: none;
+    }
+  
+    #mouseIcon2 {
+      display: none;
+    }
+    
     .footer {
         padding: 20px 10px;
     }

@@ -21,81 +21,69 @@ document.addEventListener('DOMContentLoaded', function () {
   }, 1000);
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const arrow = document.getElementById('mouseIcon2');
+    
+    setInterval(() => {
+      mouseIcon2.style.transform = 'translateY(-10px)';
+        setTimeout(() => {
+          mouseIcon2.style.transform = 'translateY(0)';
+        }, 500);
+    }, 1000);
+  });
+  
+
 //!!!!!! sroll
 
-window.addEventListener('scroll', function() {
-  var mySkillsSection = document.getElementById('MYSKILLS');
-  var cardsContainer = document.querySelector('.cards');
-  // var workSection = document.querySelector('.work'); // Get the work section
+// window.addEventListener('scroll', function() {
+//   var mySkillsSection = document.getElementById('MYSKILLS');
+// //   var cardsContainer = document.querySelector('.cards');
+//   // var workSection = document.querySelector('.work'); // Get the work section
 
-  var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+//   var scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-  var mySkillsPosition = mySkillsSection.offsetTop;
-  var cardsPosition = cardsContainer.offsetTop;
-  // var workPosition = workSection.offsetTop; // Get the offset top of the work section
+//   var mySkillsPosition = mySkillsSection.offsetTop;
+// //   var cardsPosition = cardsContainer.offsetTop;
+//   // var workPosition = workSection.offsetTop; // Get the offset top of the work section
 
-  var buffer = 200; 
+//   var buffer = 200; 
 
-  // MYSKILLS Section
-  if (scrollPosition + buffer > mySkillsPosition) {
-      mySkillsSection.style.opacity = 1;
-      mySkillsSection.style.transform = 'translateY(0)';
-      mySkillsSection.style.visibility = 'visible';
-  } else {
-      mySkillsSection.style.opacity = 0;
-      mySkillsSection.style.transform = 'translateY(20px)';
-      mySkillsSection.style.visibility = 'hidden';
-  }
+//   // MYSKILLS Section
+// //   if (scrollPosition + buffer > mySkillsPosition) {
+// //       mySkillsSection.style.opacity = 1;
+// //       mySkillsSection.style.transform = 'translateY(0)';
+// //       mySkillsSection.style.visibility = 'visible';
+// //   } else {
+// //       mySkillsSection.style.opacity = 0;
+// //       mySkillsSection.style.transform = 'translateY(20px)';
+// //       mySkillsSection.style.visibility = 'hidden';
+// //   }
 
-  // Cards Section
-  if (scrollPosition + buffer > cardsPosition) {
-      cardsContainer.style.opacity = 1;
-      cardsContainer.style.transform = 'translateY(0)';
-      cardsContainer.style.visibility = 'visible';
-  } else {
-      cardsContainer.style.opacity = 0;
-      cardsContainer.style.transform = 'translateY(20px)';
-      cardsContainer.style.visibility = 'hidden';
-  }
+//   // Cards Section
+// //   if (scrollPosition + buffer > cardsPosition) {
+// //       cardsContainer.style.opacity = 1;
+// //       cardsContainer.style.transform = 'translateY(0)';
+// //       cardsContainer.style.visibility = 'visible';
+// //   } else {
+// //       cardsContainer.style.opacity = 0;
+// //       cardsContainer.style.transform = 'translateY(20px)';
+// //       cardsContainer.style.visibility = 'hidden';
+// //   }
 
-  // Work Section
-  // if (scrollPosition + buffer > workPosition) {
-  //     workSection.style.opacity = 1;
-  //     workSection.style.transform = 'translateY(0)';
-  //     workSection.style.visibility = 'visible';
-  // } else {
-  //     workSection.style.opacity = 0;
-  //     workSection.style.transform = 'translateY(20px)';
-  //     workSection.style.visibility = 'hidden';
-  // }
+//   // Work Section
+//   // if (scrollPosition + buffer > workPosition) {
+//   //     workSection.style.opacity = 1;
+//   //     workSection.style.transform = 'translateY(0)';
+//   //     workSection.style.visibility = 'visible';
+//   // } else {
+//   //     workSection.style.opacity = 0;
+//   //     workSection.style.transform = 'translateY(20px)';
+//   //     workSection.style.visibility = 'hidden';
+//   // }
 
-});
+// });
 
-
-
-// linking THE NAV WITH THE SETIONS
-// function smoothScroll(targetSelector, duration) {
-//   const target = document.querySelector(targetSelector);
-//   const targetPosition = target.getBoundingClientRect().top;
-//   const startPosition = window.pageYOffset;
-//   const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
-
-//   const easeInOutQuad = (time, start, change, duration) => {
-//       time /= duration / 2;
-//       if (time < 1) return change / 2 * time * time + start;
-//       time--;
-//       return -change / 2 * (time * (time - 2) - 1) + start;
-//   };
-
-//   const animateScroll = currentTime => {
-//       const timeElapsed = currentTime - startTime;
-//       const run = easeInOutQuad(timeElapsed, startPosition, targetPosition, duration);
-//       window.scrollTo(0, run);
-//       if (timeElapsed < duration) requestAnimationFrame(animateScroll);
-//   };
-
-//   requestAnimationFrame(animateScroll);
-// }
 
 
 //!!!!! theme modes
@@ -170,6 +158,3 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       document.getElementById('submit-message').textContent = 'An error occurred. Please try again.';
   });
 });
-
-
-// sommth html
