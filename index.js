@@ -20,8 +20,25 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 500);
   }, 1000);
 });
+// ! imges load
+document.addEventListener("DOMContentLoaded", function() {
+  let lazyImages = document.querySelectorAll('img[data-src]');
+  let observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        let img = entry.target;
+        img.src = img.dataset.src;
+        img.removeAttribute('data-src');
+        observer.unobserve(img);
+      }
+    });
+  });
 
-
+  lazyImages.forEach(function(img) {
+    observer.observe(img);
+  });
+});
+//!!!!!! mouse
 document.addEventListener('DOMContentLoaded', function () {
     const arrow = document.getElementById('mouseIcon2');
     
