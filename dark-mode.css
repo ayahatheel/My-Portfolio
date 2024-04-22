@@ -440,6 +440,15 @@ nav ul li a:hover {
     }
   }
 
+  .title-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0; 
+    margin-top: -30px;
+}
+  
+
 
 .letter {
     font-size: 60px; 
@@ -908,7 +917,8 @@ nav ul li a:hover {
 }
 
 .jawahra-p1 {
-    overflow: hidden;    
+    overflow: hidden;  
+    color: #000;
     text-overflow: ellipsis; 
     text-align: left;
     font-size: 0.9em;
@@ -916,6 +926,19 @@ nav ul li a:hover {
     margin-right:260px;
 }
 
+
+#todolist {
+    margin-top: 50px;
+
+}
+
+.todo {
+    width: 600px;
+    rotate: 5deg;
+    padding: 23px;
+    z-index: 2;
+    margin-top: -15px;
+}
 
 /* !contact me */
 .contactme {
@@ -1031,8 +1054,8 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
 
-    #worktitle {
-        margin-top: -80px;
+    .title-container2  {
+        margin-top: -90px;
         margin-bottom: -40px;
     }
     #star4 {
@@ -1174,8 +1197,15 @@ nav ul li a:hover {
     margin: auto;
 }
 
-.nuqtaimg, .wedeniimg, .jawharalaptop, .jawahraimg {
+.nuqtaimg, .wedeniimg, .jawharalaptop, .jawahraimg{
     width: 100%; 
+    position: relative;
+}
+
+.todo{
+    width: 90%; 
+    padding: 20px;
+    rotate: 5deg;
     position: relative;
 }
 
@@ -1235,7 +1265,7 @@ nav ul li a:hover {
 
 @media (max-width: 480px) {
 
-    
+
     #star4 {
         display: none;
     }
@@ -1326,6 +1356,12 @@ nav ul li a:hover {
         position: relative;
     }
     
+    .todo{
+        width: 90%; 
+        rotate: 5deg;
+        position: relative;
+    }
+
     .nuqtaimg{
         top: 50px;
         right: 20px;
@@ -1380,11 +1416,12 @@ nav ul li a:hover {
     
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1204px) {
 
-    #worktitle {
-        margin-top: -50px;
-        margin-bottom: -90px;
+    .todo{
+        width: 85%; 
+        rotate: 5deg;
+        position: relative;
     }
 
   #star4 {
@@ -1478,6 +1515,14 @@ nav ul li a:hover {
 
 
 }
+
+
+/* @media (max-width: 1025px) {
+    .title-container2  {
+        margin-top: -90px;
+        margin-bottom: 40px;
+    }
+} */
 /* fooooooooooooooooooooooooooooooooooooooooooooottttttttttttttttttttterrrrrrrrrrrr */
 .footer {
     width: 100%;
@@ -1506,6 +1551,11 @@ nav ul li a:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    #worktitle {
+        margin-top: -80px;
+        margin-bottom: -40px;
+    }
+
     #star4 {
         display: none;
     }
@@ -1569,3 +1619,42 @@ nav ul li a:hover {
 }
 
 
+/* ?buttonnn */
+
+.btn {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #000; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+    text-decoration: none; 
+  }
+  
+  .btn:hover {
+    background-color: #f00; 
+    color: #fff;
+  }
+  
+  .btn:active {
+    transform: scale(0.95); /* Scale down on click */
+  }
+
+  .btn1 {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #000; 
+    color: #fff; 
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    align-items: center;
+    cursor: not-allowed; 
+    width: 250px; 
+    text-align: center; 
+    text-decoration: none; 
+    opacity: 0.5; 
+  }
